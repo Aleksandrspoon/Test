@@ -1,29 +1,29 @@
-const PAIRS = [3, 6, 9]
+const PAIRS = [3, 6, 9];
 
 function renderScreenGame() {
-  const app = emptyScreen()
+  const app = emptyScreen();
 
-  window.application.blocks["newGame"] = renderNewGame
-  window.application.blocks["cards"] = renderCards
+  window.application.blocks["newGame"] = renderNewGame;
+  window.application.blocks["cards"] = renderCards;
 
-  app.appendChild(templateEngine(gameScreenTemplate()))
+  app.appendChild(templateEngine(gameScreenTemplate()));
 
-  const gameScreen = document.querySelector(".game__screen")
-  const headerScreen = document.querySelector(".game__screen-header")
+  const gameScreen = document.querySelector(".game__screen");
+  const headerScreen = document.querySelector(".game__screen-header");
 
-  headerScreen.appendChild(templateEngine(playNewGameTemplate()))
+  headerScreen.appendChild(templateEngine(playNewGameTemplate()));
 
-  window.application.renderBlock("newGame", headerScreen)
-  window.application.renderBlock("cards", gameScreen)
+  window.application.renderBlock("newGame", headerScreen);
+  window.application.renderBlock("cards", gameScreen);
 }
 
 function renderNewGame() {
   document.querySelector(".game__button").addEventListener("click", (event) => {
-    event.preventDefault()
+    event.preventDefault();
 
-    window.application.level = ""
-    window.application.renderScreen("gameLevel")
-  })
+    window.application.level = "";
+    window.application.renderScreen("gameLevel");
+  });
 }
 
 function playNewGameTemplate() {
@@ -31,70 +31,70 @@ function playNewGameTemplate() {
     tag: "button",
     cls: ["game__button", "button"],
     text: "Начать заново",
-  }
+  };
 }
 
 function timer() {
   setTimeout(() => {
-    gameWatch()
-    coupCards()
-  }, 5000)
+    gameWatch();
+    coupCards();
+  }, 5000);
 }
 
 function gameWatch() {
-  const gameTimer = document.querySelector(".timer__degits")
+  const gameTimer = document.querySelector(".timer__degits");
 
-  let milliseconds = 0
-  let startTimer
+  let milliseconds = 0;
+  let startTimer;
 
   startTimer = setInterval(() => {
-    milliseconds += 1000
+    milliseconds += 1000;
 
-    let dateTimer = new Date(milliseconds)
+    let dateTimer = new Date(milliseconds);
 
     gameTimer.innerHTML =
       dateTimer.getUTCMinutes() +
       ":" +
-      ("0" + dateTimer.getUTCSeconds()).slice(-2)
-  }, 1000)
+      ("0" + dateTimer.getUTCSeconds()).slice(-2);
+  }, 1000);
 }
 
 function coupCards() {
-  const cardFront = document.querySelectorAll(".card__item-front")
-  const cardBack = document.querySelectorAll(".card__item-back")
+  const cardFront = document.querySelectorAll(".card__item-front");
+  const cardBack = document.querySelectorAll(".card__item-back");
 
   cardBack.forEach((card) => {
-    card.classList.remove("card__item_hidden")
-  })
+    card.classList.remove("card__item_hidden");
+  });
 
   cardFront.forEach((card) => {
-    card.classList.add("card__item_hidden")
-  })
+    card.classList.add("card__item_hidden");
+  });
 }
 
 function renderCards() {
-  timer()
+  timer();
 
   // все карты
-  let allCardValues = cards
+  let allCardValues = cards;
   // кол-во пар карт
-  const numberOfCards = PAIRS[window.application.level - 1]
+  const numberOfCards = PAIRS[window.application.level - 1];
   // перемешивание карт
-  let cardValues2 = shuffleCards(allCardValues)
+  let cardValues2 = shuffleCards(allCardValues);
 
-  cardValues2 = cardValues2.slice(0, numberOfCards)
-  cardValues2.push(...cardValues2)
-  cardValues2 = shuffleCards(cardValues2)
+  cardValues2 = cardValues2.slice(0, numberOfCards);
+  cardValues2.push(...cardValues2);
+  cardValues2 = shuffleCards(cardValues2);
 
   // let cardValues2 = getRandomCards(numberOfCards, allCardValues);
   // cardValues2.push(...cardValues2);
   // cardValues2 = shuffleCards(cardValues2);
 
-  const cardsWrapper = document.querySelector(".cards__wrapper")
+  const cardsWrapper = document.querySelector(".cards__wrapper");
 
   cardValues2.forEach((card) => {
-    cardsWrapper.appendChild(templateEngine(card))
-  })
+    cardsWrapper.appendChild(templateEngine(card));
+  });
 
   // let levelElems = document.querySelectorAll(".card__item");
   // levelElems.forEach((item) => {
@@ -112,20 +112,20 @@ function renderCards() {
 
 function shuffleCards(array) {
   for (let i = array.length - 1; i > 0; i--) {
-    let randomIndex = Math.floor(Math.random() * (i + 1))
-    ;[array[i], array[randomIndex]] = [array[randomIndex], array[i]]
+    let randomIndex = Math.floor(Math.random() * (i + 1));
+    [array[i], array[randomIndex]] = [array[randomIndex], array[i]];
   }
-  return array
+  return array;
 }
 
 function getRandomCards(pairsOfCards, cardsArray) {
-  let array = []
+  let array = [];
   for (let i = 0; i < pairsOfCards; i++) {
-    let randomIndex = Math.floor(Math.random() * (cardsArray.length - 1))
-    console.log("randomIndex ", randomIndex)
-    array[i] = cardsArray[randomIndex]
+    let randomIndex = Math.floor(Math.random() * (cardsArray.length - 1));
+    console.log("randomIndex ", randomIndex);
+    array[i] = cardsArray[randomIndex];
   }
-  return array
+  return array;
 }
 
 function gameScreenTemplate() {
@@ -177,5 +177,5 @@ function gameScreenTemplate() {
         ],
       },
     ],
-  }
+  };
 }
