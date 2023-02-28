@@ -1,48 +1,57 @@
 {
-  "name": "less",
+  "name": "card_game",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
   "scripts": {
-    "build": "NODE_ENV=production webpack",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "webpack-dev-server ––open",
-    "format": "prettier --write ./src/",
-    "lint:js": "eslint ./src/**/*.js",
-    "lint:css": "stylelint ./src/**/*.css",
-    "lint:ts": "tsc ––noEmit",
-    "prepare": "husky install"
+    "build": "set NODE_ENV=production && webpack",
+    "start": "webpack-dev-server --open",
+    "test": "jest",
+    "format": "prettier --write ./js/",
+    "prepare": "husky install",
+    "lint:css": "stylelint ./style/**/*.css",
+    "lint:ts": "tsc --noEmit",
+    "lint": "npm run lint:ts &&  npm run lint:css"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Aleksandrspoon/Test.git"
+    "url": "git+https://github.com/ZakirovaAK/card_game.git"
   },
+  "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Aleksandrspoon/Test/issues"
+    "url": "https://github.com/ZakirovaAK/card_game/issues"
   },
-  "homepage": "https://github.com/Aleksandrspoon/Test#readme",
-  "dependencies": {
-    "http-server": "^14.1.1",
-    "lodash": "^4.17.21"
-  },
+  "homepage": "https://github.com/ZakirovaAK/card_game#readme",
   "devDependencies": {
-    "@types/lodash": "^4.14.191",
     "copy-webpack-plugin": "^11.0.0",
     "css-loader": "^6.7.3",
     "css-minimizer-webpack-plugin": "^4.2.2",
-    "eslint": "^8.34.0",
+    "eslint": "^8.32.0",
     "eslint-config-prettier": "^8.6.0",
     "eslint-plugin-prettier": "^4.2.1",
     "html-webpack-plugin": "^5.5.0",
     "husky": "^8.0.3",
     "mini-css-extract-plugin": "^2.7.2",
-    "prettier": "^2.8.4",
+    "prettier": "^2.8.3",
+    "style-loader": "^3.3.1",
+    "stylelint": "^14.16.1",
+    "stylelint-config-prettier": "^9.0.4",
+    "stylelint-config-standard": "^29.0.0",
+    "stylelint-prettier": "^2.0.0",
+    "ts-jest": "^29.0.5",
     "ts-loader": "^9.4.2",
     "typescript": "^4.9.5",
     "webpack": "^5.75.0",
     "webpack-cli": "^5.0.1",
     "webpack-dev-server": "^4.11.1"
+  },
+  "dependencies": {
+    "@typescript-eslint/parser": "^5.50.0",
+    "jest": "^29.4.3"
   }
 }
