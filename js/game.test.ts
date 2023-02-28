@@ -30,7 +30,7 @@ describe("shuffleCards()", () => {
           },
           {
             tag: "img",
-            cls: ["card-item-back", "card-item_hidden"],
+            cls: ["card-item-back", "card-item-hidden"],
             attrs: {
               width: "95",
               src: "./static/img/shirt.svg",

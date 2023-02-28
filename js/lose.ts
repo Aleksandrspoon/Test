@@ -5,14 +5,14 @@ export function renderScreenLose() {
 	const app = document.querySelector('.container') as HTMLElement;
 
 	const section = document.createElement('section');
-	section.classList.add('screen', 'screen_result-game');
+	section.classList.add('screen', 'screen-result-game');
 
 	const form = document.createElement('form');
-	form.classList.add('form_result-game');
+	form.classList.add('form-result-game');
 	// TODO картинка
 	const header = document.createElement('h1');
 	header.textContent = 'Вы проиграли!';
-	header.classList.add('header', 'header_result-game', 'element');
+	header.classList.add('header', 'header-result-game', 'element');
 
 	const timeBox = document.createElement('div');
 	const headerTime = document.createElement('h3');
@@ -25,7 +25,7 @@ export function renderScreenLose() {
 
 	const newGameBox = document.createElement('div');
 	const buttonNewGame = document.createElement('button');
-	buttonNewGame.classList.add('btn_level');
+	buttonNewGame.classList.add('btn-level');
 	buttonNewGame.textContent = 'Играть снова';
 	newGameBox.appendChild(buttonNewGame);
 

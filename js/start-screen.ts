@@ -15,24 +15,24 @@ export function renderScreenGameLevel() {
 	section.classList.add('screen', 'screen-level');
 
 	const form = document.createElement('form');
-	form.classList.add('form_level');
+	form.classList.add('form-level');
 
 	const header = document.createElement('h1');
 	header.textContent = 'Выбери сложность';
-	header.classList.add('level_header', 'element');
+	header.classList.add('level-header', 'element');
 
 	const divLevel = document.createElement('div');
-	divLevel.classList.add('element', 'elements__box');
+	divLevel.classList.add('element', 'elements-box');
 
 	const errorBlock = document.createElement('div');
-	errorBlock.classList.add('error__block', 'hidden__block');
+	errorBlock.classList.add('error-block', 'hidden-block');
 	const errorMessage = document.createElement('h3');
 	errorMessage.textContent = 'Пожалуйста, выберите уровень игры.';
 	errorBlock.appendChild(errorMessage);
 
 	const divLevelBox = document.createElement('div');
 	const buttonLevel = document.createElement('button');
-	buttonLevel.classList.add('btn_level');
+	buttonLevel.classList.add('btn-level');
 	buttonLevel.textContent = 'Старт';
 	divLevelBox.appendChild(buttonLevel);
 
@@ -47,7 +47,7 @@ export function renderScreenGameLevel() {
 			renderScreenGame();
 		} else {
 			// вывод сообщения о том, что нужно выбрать уровень игры
-			errorBlock.classList.remove('hidden__block');
+			errorBlock.classList.remove('hidden-block');
 		}
 	});
 
@@ -67,12 +67,12 @@ export function renderScreenGameLevel() {
 	function clickHandler(e: Event) {
 		// убираем выделение кнопки выбора уровня у кнопок
 		levelElems.forEach((item) => {
-			item.classList.remove('level_label--active');
+			item.classList.remove('level-label-active');
 		});
 		if (e.target instanceof HTMLElement) {
-			e.target.classList.add('level_label--active');
+			e.target.classList.add('level-label-active');
 			window.application.level = e.target.textContent || '';
-			errorBlock.classList.add('hidden__block');
+			errorBlock.classList.add('hidden-block');
 		}
 	}
 }
@@ -80,7 +80,7 @@ export function renderScreenGameLevel() {
 function levelScreenTemplate() {
 	return {
 		tag: 'div',
-		cls: ['level_select_div', 'element'],
+		cls: ['level-select-div', 'element'],
 		content: [
 			{
 				tag: 'input',

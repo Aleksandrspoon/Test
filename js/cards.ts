@@ -1,14 +1,14 @@
 export const cards = [
 	{
 		tag: 'div',
-		cls: 'card__item',
+		cls: 'card-item',
 		attrs: {
 			'data-id': '6C',
 		},
 		content: [
 			{
 				tag: 'img',
-				cls: ['card__item-front'],
+				cls: ['card-item-front'],
 				attrs: {
 					'data-id': '6C',
 					width: '95',
@@ -17,7 +17,7 @@ export const cards = [
 			},
 			{
 				tag: 'img',
-				cls: ['card__item-back', 'card__item_hidden'],
+				cls: ['card-item-back', 'card-item-hidden'],
 				attrs: {
 					width: '95',
 					src: './static/img/shirt.svg',
@@ -27,14 +27,14 @@ export const cards = [
 	},
 	{
 		tag: 'div',
-		cls: 'card__item',
+		cls: 'card-item',
 		attrs: {
 			'data-id': '6D',
 		},
 		content: [
 			{
 				tag: 'img',
-				cls: ['card__item-front'],
+				cls: ['card-item-front'],
 				attrs: {
 					'data-id': '6D',
 					width: '95',
@@ -43,7 +43,7 @@ export const cards = [
 			},
 			{
 				tag: 'img',
-				cls: ['card__item-back', 'card__item_hidden'],
+				cls: ['card-item-back', 'card-item-hidden'],
 				attrs: {
 					width: '95',
 					src: './static/img/shirt.svg',
@@ -53,14 +53,14 @@ export const cards = [
 	},
 	{
 		tag: 'div',
-		cls: 'card__item',
+		cls: 'card-item',
 		attrs: {
 			'data-id': '6H',
 		},
 		content: [
 			{
 				tag: 'img',
-				cls: ['card__item-front'],
+				cls: ['card-item-front'],
 				attrs: {
 					'data-id': '6H',
 					width: '95',
@@ -69,7 +69,7 @@ export const cards = [
 			},
 			{
 				tag: 'img',
-				cls: ['card__item-back', 'card__item_hidden'],
+				cls: ['card-item-back', 'card-item-hidden'],
 				attrs: {
 					width: '95',
 					src: './static/img/shirt.svg',
@@ -79,14 +79,14 @@ export const cards = [
 	},
 	{
 		tag: 'div',
-		cls: 'card__item',
+		cls: 'card-item',
 		attrs: {
 			'data-id': '6S',
 		},
 		content: [
 			{
 				tag: 'img',
-				cls: ['card__item-front'],
+				cls: ['card-item-front'],
 				attrs: {
 					'data-id': '6S',
 					width: '95',
@@ -95,7 +95,7 @@ export const cards = [
 			},
 			{
 				tag: 'img',
-				cls: ['card__item-back', 'card__item_hidden'],
+				cls: ['card-item-back', 'card-item-hidden'],
 				attrs: {
 					width: '95',
 					src: './static/img/shirt.svg',
@@ -105,14 +105,14 @@ export const cards = [
 	},
 	{
 		tag: 'div',
-		cls: 'card__item',
+		cls: 'card-item',
 		attrs: {
 			'data-id': '7C',
 		},
 		content: [
 			{
 				tag: 'img',
-				cls: ['card__item-front'],
+				cls: ['card-item-front'],
 				attrs: {
 					'data-id': '7C',
 					width: '95',
@@ -121,7 +121,7 @@ export const cards = [
 			},
 			{
 				tag: 'img',
-				cls: ['card__item-back', 'card__item_hidden'],
+				cls: ['card-item-back', 'card-item-hidden'],
 				attrs: {
 					width: '95',
 					src: './static/img/shirt.svg',
@@ -131,14 +131,14 @@ export const cards = [
 	},
 	{
 		tag: 'div',
-		cls: 'card__item',
+		cls: 'card-item',
 		attrs: {
 			'data-id': '7D',
 		},
 		content: [
 			{
 				tag: 'img',
-				cls: ['card__item-front'],
+				cls: ['card-item-front'],
 				attrs: {
 					'data-id': '7D',
 					width: '95',
@@ -147,7 +147,7 @@ export const cards = [
 			},
 			{
 				tag: 'img',
-				cls: ['card__item-back', 'card__item_hidden'],
+				cls: ['card-item-back', 'card-item-hidden'],
 				attrs: {
 					width: '95',
 					src: './static/img/shirt.svg',
@@ -157,14 +157,14 @@ export const cards = [
 	},
 	{
 		tag: 'div',
-		cls: 'card__item',
+		cls: 'card-item',
 		attrs: {
 			'data-id': '7H',
 		},
 		content: [
 			{
 				tag: 'img',
-				cls: ['card__item-front'],
+				cls: ['card-item-front'],
 				attrs: {
 					'data-id': '7H',
 					width: '95',
@@ -173,7 +173,7 @@ export const cards = [
 			},
 			{
 				tag: 'img',
-				cls: ['card__item-back', 'card__item_hidden'],
+				cls: ['card-item-back', 'card-item-hidden'],
 				attrs: {
 					width: '95',
 					src: './static/img/shirt.svg',
@@ -183,14 +183,14 @@ export const cards = [
 	},
 	{
 		tag: 'div',
-		cls: 'card__item',
+		cls: 'card-item',
 		attrs: {
 			'data-id': '7S',
 		},
 		content: [
 			{
 				tag: 'img',
-				cls: ['card__item-front'],
+				cls: ['card-item-front'],
 				attrs: {
 					'data-id': '7S',
 					width: '95',
@@ -199,7 +199,7 @@ export const cards = [
 			},
 			{
 				tag: 'img',
-				cls: ['card__item-back', 'card__item_hidden'],
+				cls: ['card-item-back', 'card-item-hidden'],
 				attrs: {
 					width: '95',
 					src: './static/img/shirt.svg',
@@ -209,14 +209,14 @@ export const cards = [
 	},
 	{
 		tag: 'div',
-		cls: 'card__item',
+		cls: 'card-item',
 		attrs: {
 			'data-id': '8C',
 		},
 		content: [
 			{
 				tag: 'img',
-				cls: ['card__item-front'],
+				cls: ['card-item-front'],
 				attrs: {
 					'data-id': '8C',
 					width: '95',
@@ -225,7 +225,7 @@ export const cards = [
 			},
 			{
 				tag: 'img',
-				cls: ['card__item-back', 'card__item_hidden'],
+				cls: ['card-item-back', 'card-item-hidden'],
 				attrs: {
 					width: '95',
 					src: './static/img/shirt.svg',
@@ -235,14 +235,14 @@ export const cards = [
 	},
 	{
 		tag: 'div',
-		cls: 'card__item',
+		cls: 'card-item',
 		attrs: {
 			'data-id': '8D',
 		},
 		content: [
 			{
 				tag: 'img',
-				cls: ['card__item-front'],
+				cls: ['card-item-front'],
 				attrs: {
 					'data-id': '8D',
 					width: '95',
@@ -251,7 +251,7 @@ export const cards = [
 			},
 			{
 				tag: 'img',
-				cls: ['card__item-back', 'card__item_hidden'],
+				cls: ['card-item-back', 'card-item-hidden'],
 				attrs: {
 					width: '95',
 					src: './static/img/shirt.svg',
@@ -261,14 +261,14 @@ export const cards = [
 	},
 	{
 		tag: 'div',
-		cls: 'card__item',
+		cls: 'card-item',
 		attrs: {
 			'data-id': '8H',
 		},
 		content: [
 			{
 				tag: 'img',
-				cls: ['card__item-front'],
+				cls: ['card-item-front'],
 				attrs: {
 					'data-id': '8H',
 					width: '95',
@@ -277,7 +277,7 @@ export const cards = [
 			},
 			{
 				tag: 'img',
-				cls: ['card__item-back', 'card__item_hidden'],
+				cls: ['card-item-back', 'card-item-hidden'],
 				attrs: {
 					width: '95',
 					src: './static/img/shirt.svg',
@@ -287,14 +287,14 @@ export const cards = [
 	},
 	{
 		tag: 'div',
-		cls: 'card__item',
+		cls: 'card-item',
 		attrs: {
 			'data-id': '8S',
 		},
 		content: [
 			{
 				tag: 'img',
-				cls: ['card__item-front'],
+				cls: ['card-item-front'],
 				attrs: {
 					'data-id': '8S',
 					width: '95',
@@ -303,7 +303,7 @@ export const cards = [
 			},
 			{
 				tag: 'img',
-				cls: ['card__item-back', 'card__item_hidden'],
+				cls: ['card-item-back', 'card-item-hidden'],
 				attrs: {
 					width: '95',
 					src: './static/img/shirt.svg',
@@ -313,14 +313,14 @@ export const cards = [
 	},
 	{
 		tag: 'div',
-		cls: 'card__item',
+		cls: 'card-item',
 		attrs: {
 			'data-id': '9C',
 		},
 		content: [
 			{
 				tag: 'img',
-				cls: ['card__item-front'],
+				cls: ['card-item-front'],
 				attrs: {
 					'data-id': '9C',
 					width: '95',
@@ -329,7 +329,7 @@ export const cards = [
 			},
 			{
 				tag: 'img',
-				cls: ['card__item-back', 'card__item_hidden'],
+				cls: ['card-item-back', 'card-item-hidden'],
 				attrs: {
 					width: '95',
 					src: './static/img/shirt.svg',
@@ -339,14 +339,14 @@ export const cards = [
 	},
 	{
 		tag: 'div',
-		cls: 'card__item',
+		cls: 'card-item',
 		attrs: {
 			'data-id': '9D',
 		},
 		content: [
 			{
 				tag: 'img',
-				cls: ['card__item-front'],
+				cls: ['card-item-front'],
 				attrs: {
 					'data-id': '9D',
 					width: '95',
@@ -355,7 +355,7 @@ export const cards = [
 			},
 			{
 				tag: 'img',
-				cls: ['card__item-back', 'card__item_hidden'],
+				cls: ['card-item-back', 'card-item-hidden'],
 				attrs: {
 					width: '95',
 					src: './static/img/shirt.svg',
@@ -365,14 +365,14 @@ export const cards = [
 	},
 	{
 		tag: 'div',
-		cls: 'card__item',
+		cls: 'card-item',
 		attrs: {
 			'data-id': '9H',
 		},
 		content: [
 			{
 				tag: 'img',
-				cls: ['card__item-front'],
+				cls: ['card-item-front'],
 				attrs: {
 					'data-id': '9H',
 					width: '95',
@@ -381,7 +381,7 @@ export const cards = [
 			},
 			{
 				tag: 'img',
-				cls: ['card__item-back', 'card__item_hidden'],
+				cls: ['card-item-back', 'card-item-hidden'],
 				attrs: {
 					width: '95',
 					src: './static/img/shirt.svg',
@@ -391,14 +391,14 @@ export const cards = [
 	},
 	{
 		tag: 'div',
-		cls: 'card__item',
+		cls: 'card-item',
 		attrs: {
 			'data-id': '9S',
 		},
 		content: [
 			{
 				tag: 'img',
-				cls: ['card__item-front'],
+				cls: ['card-item-front'],
 				attrs: {
 					'data-id': '9S',
 					width: '95',
@@ -407,7 +407,7 @@ export const cards = [
 			},
 			{
 				tag: 'img',
-				cls: ['card__item-back', 'card__item_hidden'],
+				cls: ['card-item-back', 'card-item-hidden'],
 				attrs: {
 					width: '95',
 					src: './static/img/shirt.svg',
@@ -417,14 +417,14 @@ export const cards = [
 	},
 	{
 		tag: 'div',
-		cls: 'card__item',
+		cls: 'card-item',
 		attrs: {
 			'data-id': 'AC',
 		},
 		content: [
 			{
 				tag: 'img',
-				cls: ['card__item-front'],
+				cls: ['card-item-front'],
 				attrs: {
 					'data-id': 'AC',
 					width: '95',
@@ -433,7 +433,7 @@ export const cards = [
 			},
 			{
 				tag: 'img',
-				cls: ['card__item-back', 'card__item_hidden'],
+				cls: ['card-item-back', 'card-item-hidden'],
 				attrs: {
 					width: '95',
 					src: './static/img/shirt.svg',
@@ -443,14 +443,14 @@ export const cards = [
 	},
 	{
 		tag: 'div',
-		cls: 'card__item',
+		cls: 'card-item',
 		attrs: {
 			'data-id': 'AD',
 		},
 		content: [
 			{
 				tag: 'img',
-				cls: ['card__item-front'],
+				cls: ['card-item-front'],
 				attrs: {
 					'data-id': 'AD',
 					width: '95',
@@ -459,7 +459,7 @@ export const cards = [
 			},
 			{
 				tag: 'img',
-				cls: ['card__item-back', 'card__item_hidden'],
+				cls: ['card-item-back', 'card-item-hidden'],
 				attrs: {
 					width: '95',
 					src: './static/img/shirt.svg',
@@ -469,14 +469,14 @@ export const cards = [
 	},
 	{
 		tag: 'div',
-		cls: 'card__item',
+		cls: 'card-item',
 		attrs: {
 			'data-id': 'AH',
 		},
 		content: [
 			{
 				tag: 'img',
-				cls: ['card__item-front'],
+				cls: ['card-item-front'],
 				attrs: {
 					'data-id': 'AH',
 					width: '95',
@@ -485,7 +485,7 @@ export const cards = [
 			},
 			{
 				tag: 'img',
-				cls: ['card__item-back', 'card__item_hidden'],
+				cls: ['card-item-back', 'card-item-hidden'],
 				attrs: {
 					width: '95',
 					src: './static/img/shirt.svg',
@@ -495,14 +495,14 @@ export const cards = [
 	},
 	{
 		tag: 'div',
-		cls: 'card__item',
+		cls: 'card-item',
 		attrs: {
 			'data-id': 'AS',
 		},
 		content: [
 			{
 				tag: 'img',
-				cls: ['card__item-front'],
+				cls: ['card-item-front'],
 				attrs: {
 					'data-id': 'AS',
 					width: '95',
@@ -511,7 +511,7 @@ export const cards = [
 			},
 			{
 				tag: 'img',
-				cls: ['card__item-back', 'card__item_hidden'],
+				cls: ['card-item-back', 'card-item-hidden'],
 				attrs: {
 					width: '95',
 					src: './static/img/shirt.svg',
@@ -521,14 +521,14 @@ export const cards = [
 	},
 	{
 		tag: 'div',
-		cls: 'card__item',
+		cls: 'card-item',
 		attrs: {
 			'data-id': 'JC',
 		},
 		content: [
 			{
 				tag: 'img',
-				cls: ['card__item-front'],
+				cls: ['card-item-front'],
 				attrs: {
 					'data-id': 'JC',
 					width: '95',
@@ -537,7 +537,7 @@ export const cards = [
 			},
 			{
 				tag: 'img',
-				cls: ['card__item-back', 'card__item_hidden'],
+				cls: ['card-item-back', 'card-item-hidden'],
 				attrs: {
 					width: '95',
 					src: './static/img/shirt.svg',
@@ -547,14 +547,14 @@ export const cards = [
 	},
 	{
 		tag: 'div',
-		cls: 'card__item',
+		cls: 'card-item',
 		attrs: {
 			'data-id': 'JD',
 		},
 		content: [
 			{
 				tag: 'img',
-				cls: ['card__item-front'],
+				cls: ['card-item-front'],
 				attrs: {
 					'data-id': 'JD',
 					width: '95',
@@ -563,7 +563,7 @@ export const cards = [
 			},
 			{
 				tag: 'img',
-				cls: ['card__item-back', 'card__item_hidden'],
+				cls: ['card-item-back', 'card-item-hidden'],
 				attrs: {
 					width: '95',
 					src: './static/img/shirt.svg',
@@ -573,14 +573,14 @@ export const cards = [
 	},
 	{
 		tag: 'div',
-		cls: 'card__item',
+		cls: 'card-item',
 		attrs: {
 			'data-id': 'JH',
 		},
 		content: [
 			{
 				tag: 'img',
-				cls: ['card__item-front'],
+				cls: ['card-item-front'],
 				attrs: {
 					'data-id': 'JH',
 					width: '95',
@@ -589,7 +589,7 @@ export const cards = [
 			},
 			{
 				tag: 'img',
-				cls: ['card__item-back', 'card__item_hidden'],
+				cls: ['card-item-back', 'card-item-hidden'],
 				attrs: {
 					width: '95',
 					src: './static/img/shirt.svg',
@@ -599,14 +599,14 @@ export const cards = [
 	},
 	{
 		tag: 'div',
-		cls: 'card__item',
+		cls: 'card-item',
 		attrs: {
 			'data-id': 'JS',
 		},
 		content: [
 			{
 				tag: 'img',
-				cls: ['card__item-front'],
+				cls: ['card-item-front'],
 				attrs: {
 					'data-id': 'JS',
 					width: '95',
@@ -615,7 +615,7 @@ export const cards = [
 			},
 			{
 				tag: 'img',
-				cls: ['card__item-back', 'card__item_hidden'],
+				cls: ['card-item-back', 'card-item-hidden'],
 				attrs: {
 					width: '95',
 					src: './static/img/shirt.svg',
@@ -625,14 +625,14 @@ export const cards = [
 	},
 	{
 		tag: 'div',
-		cls: 'card__item',
+		cls: 'card-item',
 		attrs: {
 			'data-id': 'KC',
 		},
 		content: [
 			{
 				tag: 'img',
-				cls: ['card__item-front'],
+				cls: ['card-item-front'],
 				attrs: {
 					'data-id': 'KC',
 					width: '95',
@@ -641,7 +641,7 @@ export const cards = [
 			},
 			{
 				tag: 'img',
-				cls: ['card__item-back', 'card__item_hidden'],
+				cls: ['card-item-back', 'card-item-hidden'],
 				attrs: {
 					width: '95',
 					src: './static/img/shirt.svg',
@@ -651,14 +651,14 @@ export const cards = [
 	},
 	{
 		tag: 'div',
-		cls: 'card__item',
+		cls: 'card-item',
 		attrs: {
 			'data-id': 'KD',
 		},
 		content: [
 			{
 				tag: 'img',
-				cls: ['card__item-front'],
+				cls: ['card-item-front'],
 				attrs: {
 					'data-id': 'KD',
 					width: '95',
@@ -667,7 +667,7 @@ export const cards = [
 			},
 			{
 				tag: 'img',
-				cls: ['card__item-back', 'card__item_hidden'],
+				cls: ['card-item-back', 'card-item-hidden'],
 				attrs: {
 					width: '95',
 					src: './static/img/shirt.svg',
@@ -677,14 +677,14 @@ export const cards = [
 	},
 	{
 		tag: 'div',
-		cls: 'card__item',
+		cls: 'card-item',
 		attrs: {
 			'data-id': 'KH',
 		},
 		content: [
 			{
 				tag: 'img',
-				cls: ['card__item-front'],
+				cls: ['card-item-front'],
 				attrs: {
 					'data-id': 'KH',
 					width: '95',
@@ -693,7 +693,7 @@ export const cards = [
 			},
 			{
 				tag: 'img',
-				cls: ['card__item-back', 'card__item_hidden'],
+				cls: ['card-item-back', 'card-item-hidden'],
 				attrs: {
 					width: '95',
 					src: './static/img/shirt.svg',
@@ -703,14 +703,14 @@ export const cards = [
 	},
 	{
 		tag: 'div',
-		cls: 'card__item',
+		cls: 'card-item',
 		attrs: {
 			'data-id': 'KS',
 		},
 		content: [
 			{
 				tag: 'img',
-				cls: ['card__item-front'],
+				cls: ['card-item-front'],
 				attrs: {
 					'data-id': 'KS',
 					width: '95',
@@ -719,7 +719,7 @@ export const cards = [
 			},
 			{
 				tag: 'img',
-				cls: ['card__item-back', 'card__item_hidden'],
+				cls: ['card-item-back', 'card-item-hidden'],
 				attrs: {
 					width: '95',
 					src: './static/img/shirt.svg',
@@ -729,14 +729,14 @@ export const cards = [
 	},
 	{
 		tag: 'div',
-		cls: 'card__item',
+		cls: 'card-item',
 		attrs: {
 			'data-id': 'QC',
 		},
 		content: [
 			{
 				tag: 'img',
-				cls: ['card__item-front'],
+				cls: ['card-item-front'],
 				attrs: {
 					'data-id': 'QC',
 					width: '95',
@@ -745,7 +745,7 @@ export const cards = [
 			},
 			{
 				tag: 'img',
-				cls: ['card__item-back', 'card__item_hidden'],
+				cls: ['card-item-back', 'card-item-hidden'],
 				attrs: {
 					width: '95',
 					src: './static/img/shirt.svg',
@@ -755,14 +755,14 @@ export const cards = [
 	},
 	{
 		tag: 'div',
-		cls: 'card__item',
+		cls: 'card-item',
 		attrs: {
 			'data-id': 'QD',
 		},
 		content: [
 			{
 				tag: 'img',
-				cls: ['card__item-front'],
+				cls: ['card-item-front'],
 				attrs: {
 					'data-id': 'QD',
 					width: '95',
@@ -771,7 +771,7 @@ export const cards = [
 			},
 			{
 				tag: 'img',
-				cls: ['card__item-back', 'card__item_hidden'],
+				cls: ['card-item-back', 'card-item-hidden'],
 				attrs: {
 					width: '95',
 					src: './static/img/shirt.svg',
@@ -781,14 +781,14 @@ export const cards = [
 	},
 	{
 		tag: 'div',
-		cls: 'card__item',
+		cls: 'card-item',
 		attrs: {
 			'data-id': 'QH',
 		},
 		content: [
 			{
 				tag: 'img',
-				cls: ['card__item-front'],
+				cls: ['card-item-front'],
 				attrs: {
 					'data-id': 'QH',
 					width: '95',
@@ -797,7 +797,7 @@ export const cards = [
 			},
 			{
 				tag: 'img',
-				cls: ['card__item-back', 'card__item_hidden'],
+				cls: ['card-item-back', 'card-item-hidden'],
 				attrs: {
 					width: '95',
 					src: './static/img/shirt.svg',
@@ -807,14 +807,14 @@ export const cards = [
 	},
 	{
 		tag: 'div',
-		cls: 'card__item',
+		cls: 'card-item',
 		attrs: {
 			'data-id': 'QS',
 		},
 		content: [
 			{
 				tag: 'img',
-				cls: ['card__item-front'],
+				cls: ['card-item-front'],
 				attrs: {
 					'data-id': 'QS',
 					width: '95',
@@ -823,7 +823,7 @@ export const cards = [
 			},
 			{
 				tag: 'img',
-				cls: ['card__item-back', 'card__item_hidden'],
+				cls: ['card-item-back', 'card-item-hidden'],
 				attrs: {
 					width: '95',
 					src: './static/img/shirt.svg',
@@ -833,14 +833,14 @@ export const cards = [
 	},
 	{
 		tag: 'div',
-		cls: 'card__item',
+		cls: 'card-item',
 		attrs: {
 			'data-id': 'TC',
 		},
 		content: [
 			{
 				tag: 'img',
-				cls: ['card__item-front'],
+				cls: ['card-item-front'],
 				attrs: {
 					'data-id': 'TC',
 					width: '95',
@@ -849,7 +849,7 @@ export const cards = [
 			},
 			{
 				tag: 'img',
-				cls: ['card__item-back', 'card__item_hidden'],
+				cls: ['card-item-back', 'card-item-hidden'],
 				attrs: {
 					width: '95',
 					src: './static/img/shirt.svg',
@@ -859,14 +859,14 @@ export const cards = [
 	},
 	{
 		tag: 'div',
-		cls: 'card__item',
+		cls: 'card-item',
 		attrs: {
 			'data-id': 'TD',
 		},
 		content: [
 			{
 				tag: 'img',
-				cls: ['card__item-front'],
+				cls: ['card-item-front'],
 				attrs: {
 					'data-id': 'TD',
 					width: '95',
@@ -875,7 +875,7 @@ export const cards = [
 			},
 			{
 				tag: 'img',
-				cls: ['card__item-back', 'card__item_hidden'],
+				cls: ['card-item-back', 'card-item-hidden'],
 				attrs: {
 					width: '95',
 					src: './static/img/shirt.svg',
@@ -885,14 +885,14 @@ export const cards = [
 	},
 	{
 		tag: 'div',
-		cls: 'card__item',
+		cls: 'card-item',
 		attrs: {
 			'data-id': 'TH',
 		},
 		content: [
 			{
 				tag: 'img',
-				cls: ['card__item-front'],
+				cls: ['card-item-front'],
 				attrs: {
 					'data-id': 'TH',
 					width: '95',
@@ -901,7 +901,7 @@ export const cards = [
 			},
 			{
 				tag: 'img',
-				cls: ['card__item-back', 'card__item_hidden'],
+				cls: ['card-item-back', 'card-item-hidden'],
 				attrs: {
 					width: '95',
 					src: './static/img/shirt.svg',
@@ -911,14 +911,14 @@ export const cards = [
 	},
 	{
 		tag: 'div',
-		cls: 'card__item',
+		cls: 'card-item',
 		attrs: {
 			'data-id': 'TS',
 		},
 		content: [
 			{
 				tag: 'img',
-				cls: ['card__item-front'],
+				cls: ['card-item-front'],
 				attrs: {
 					'data-id': 'TS',
 					width: '95',
@@ -927,7 +927,7 @@ export const cards = [
 			},
 			{
 				tag: 'img',
-				cls: ['card__item-back', 'card__item_hidden'],
+				cls: ['card-item-back', 'card-item-hidden'],
 				attrs: {
 					width: '95',
 					src: './static/img/shirt.svg',

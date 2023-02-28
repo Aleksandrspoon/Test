@@ -15,7 +15,7 @@
     timers: [],
     level: "",
   };
-  const e = ["easy_level", "medium_level", "hard_level"],
+  const e = ["easy-level", "medium-level", "hard-level"],
     t = [6, 12, 18],
     n = [3, 6, 9];
   function l() {
@@ -26,17 +26,17 @@
     const e = l();
     let c, d;
     const a = document.createElement("div");
-    a.classList.add("screen", "game_screen");
+    a.classList.add("screen", "game-screen");
     const o = document.createElement("div");
-    o.classList.add("game_screen_field");
+    o.classList.add("game-screen-field");
     const i = document.createElement("h1");
     console.log(window.application.level),
       (i.textContent = `Сложность игры : ${window.application.level}`),
-      i.classList.add("game_header");
+      i.classList.add("game-header");
     const s = document.createElement("h3");
-    s.classList.add("game_header_second");
+    s.classList.add("game-header-second");
     const r = document.createElement("h3");
-    r.classList.add("game_header_second"),
+    r.classList.add("game-header-second"),
       "3" === window.application.level
         ? ((c = t[2]), (d = n[2]))
         : "2" === window.application.level
@@ -55,12 +55,12 @@
       n = document.createElement("section");
     n.classList.add("screen", "screen-level");
     const d = document.createElement("form");
-    d.classList.add("form_level");
+    d.classList.add("form-level");
     const a = document.createElement("h1");
     (a.textContent = "Выбери сложность"),
-      a.classList.add("level_header", "element");
+      a.classList.add("level-header", "element");
     const o = document.createElement("div");
-    o.classList.add("level_select_div", "element"),
+    o.classList.add("level-select-div", "element"),
       (function (t) {
         for (let n = 1; n <= 3; n++) {
           const l = document.createElement("input");
@@ -77,14 +77,14 @@
         }
       })(o);
     const i = document.createElement("div");
-    i.classList.add("element", "elements__box");
+    i.classList.add("element", "elements-box");
     const s = document.createElement("div");
-    s.classList.add("error__block", "hidden__block");
+    s.classList.add("error-block", "hidden-block");
     const r = document.createElement("h3");
     (r.textContent = "Выберите уровень игры."), s.appendChild(r);
     const p = document.createElement("div"),
       m = document.createElement("button");
-    m.classList.add("btn_level", "button"),
+    m.classList.add("btn-level", "button"),
       (m.textContent = "Старт"),
       p.appendChild(m),
       i.appendChild(s),
@@ -94,7 +94,7 @@
           window.application.level
             ? ((window.application.screens.game = c),
               window.application.renderScreen("game"))
-            : s.classList.remove("hidden__block");
+            : s.classList.remove("hidden-block");
       }),
       d.appendChild(a),
       d.appendChild(o),
@@ -104,9 +104,9 @@
     let v = document.querySelectorAll(".level-label");
     function u(e) {
       v.forEach((e) => {
-        e.classList.remove("level_label--active");
+        e.classList.remove("level-label-active");
       }),
-        e.target.classList.add("level_label--active"),
+        e.target.classList.add("level-label-active"),
         (window.application.level = e.target.textContent),
         s.classList.add("hidden__block");
     }
